@@ -1,0 +1,25 @@
+				 Welcome to Ghorai Enterprise
+
+ BILL Number: VCSE-85980
+ Customer Name: tepa tepi
+ Address: tippara
+ Phone Number: 0987631342  								   Payment Mode: Cash
+ Email-ID: tip@gmail.com       								   Date: 26 - 07 - 2021
+===============================================================================
+ Products			 Type of Product 			 Qty 		 Per Rs. 		 Price
+===============================================================================
+ PhotoCopy 			 Passport			1		45.0		45.00
+ FormFillup 			 Normal			2		56.0		112.00
+
+
+
+
+
+=======================================================================================================
+		 All Items Amount : 	 Rs. 157.00
+		 Tax+GST Amount : 	 Rs. 1.12
+							 Total Paybill Amount : 	 Rs. 158.12
+=======================================================================================================
+
+	          Chowhati Netaji Block, Near Panchayen Math, Rajpur-Sonarpur, Kol - 700149
+						              PH : 9874041260 / 9073877551

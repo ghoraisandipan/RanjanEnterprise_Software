@@ -1,0 +1,175 @@
+/*google form */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 300;
+    width: 100%;
+    background: rgb(204, 204, 204);
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h2, h4, p {
+    margin: 0;
+}
+
+.page {
+    background: #fff;
+    display: block;
+    margin: 3rem auto 3rem auto;
+    position: relative;
+    box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
+}
+
+.page[size="A4"] {
+    width: 21cm;
+    height: 29.7cm;
+    overflow-x: hidden;
+}
+/* top section */
+.top-section {
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    height: 110px;
+    background-color: #b5aeb6;
+}
+.top-section h2 {
+    font-size: 52px;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+.top-section .contact,
+.top-section .address {
+    width: 50%;
+    height: 100px;
+    float: left;
+}
+.top-section .address-content {
+    max-width: 400px;
+}
+.contact .contact-content {
+    max-width: 265px;
+    float: right;
+    margin-top: 32px;
+}
+
+.contact-content .email,
+.contact-content .number {
+    display: block;
+}
+.contact-content .email span,
+.contact-content .number span {
+    float: right;
+    margin-left: 30px;
+}
+/*billing invoice*/
+.billing-invoice {
+    padding: 30px;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.billing-invoice .title {
+    font-weight: 400;
+    float: left;
+}
+.billing-invoice .des {
+    font-weight: 400;
+    float: right;
+}
+.billing-invoice .code {
+    font-weight: 700;
+    text-align: right;
+}
+.billing-invoice .issue {
+    text-align: right;
+    font-size: 15px;
+}
+/* billing-to*/
+.billing_to {
+    padding: 30px;
+    margin-top: 10px;
+}
+.billing_to .title {
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+.billing_to .billed_sec {
+    width: 50%;
+    float: left;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+.billing_to .sub-title,
+.billing_to .name {
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.billing_to .ship_address {
+
+    max-width: 300px;
+}
+.billing_to .table {
+    letter-spacing:  3px;
+}
+.bill_details {
+    padding: 30px;
+    margin-top: 10px;
+}
+.amount_details {
+    margin-top: 100px;
+    padding: 30px;
+}
+.amount_details .product_amount {
+ 
+    max-width: 250px;
+    text-align: right;
+    margin-right: 40px;
+    float: right;
+}
+.amount_details .gst_amount {
+ 
+    max-width: 250px;
+    text-align: right;
+    margin-right: 40px;
+    float: right;
+}
+.amount_details .total_amount {
+    margin-top: 10px;
+    max-width: 250px;
+    text-align: right;
+    margin-right: 60px;
+    float: right;
+}
+.amount_details .sign {
+    margin-top: 80px;
+    float: right;
+}
+.amount_details .generate {
+
+    margin-top: 140px;
+    text-align: center;
+    font-size: 11px;
+}
+table {
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+table th {
+    text-align: left;
+    background-color: #60c8f8;
+    color: rgb(0, 0, 0);
+    padding: 4px 80px 4px 8px;
+}
+table td {
+    border: 1px solid #e3e3e3;
+    padding: 4px 8px;
+}
+table tr:nth-child(odd) td {
+    background-color: #e7edf0;
+}
+
+
