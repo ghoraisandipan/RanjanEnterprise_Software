@@ -1,23 +1,25 @@
 				 Welcome to Ghorai Enterprise
 
- BILL Number: MSOM-59264
- Customer Name: cxbcxbvc
- Address: bcbcx
- Phone Number: bcbvcxbcx  								   Payment Mode: Cash
- Email-ID: bcxbcxbxc       								   Date: 26 - 07 - 2021
+ BILL Number: KLFH-72998
+ Customer Name: Raju Ram
+ Address: Jatin Das Park
+ Phone Number: 1234568790  								   Payment Mode: Online
+ Email-ID: raju@gmail.com       								   Date: 17 - 03 - 2022
 ===============================================================================
  Products			 Type of Product 			 Qty 		 Per Rs. 		 Price
 ===============================================================================
- PhotoCopy 			 Passport			1		56.0		56.00
+ Printout 			 Black/White			9		5.0		45.00
+ Lamination 			 Card Size			1		25.0		25.00
+ FormFillup 			 Normal			1		50.0		50.00
 
 
 
 
 
 =======================================================================================================
-		 All Items Amount : 	 Rs. 56.00
+		 All Items Amount : 	 Rs. 120.00
 		 Tax+GST Amount : 	 Rs. 0.00
-							 Total Paybill Amount : 	 Rs. 56.00
+							 Total Paybill Amount : 	 Rs. 120.00
 =======================================================================================================
 
 	          Chowhati Netaji Block, Near Panchayen Math, Rajpur-Sonarpur, Kol - 700149

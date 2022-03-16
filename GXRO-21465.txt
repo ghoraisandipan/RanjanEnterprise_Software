@@ -1,25 +1,27 @@
 				 Welcome to Ghorai Enterprise
 
- BILL Number: LLXP-56482
- Customer Name: cbcbcxb
- Address: bcxvbcxb
- Phone Number: cxbcxb  								   Payment Mode: Card
- Email-ID: cbcxbcxb       								   Date: 07 - 08 - 2021
+ BILL Number: GXRO-21465
+ Customer Name: Sandipan Ghorai
+ Address: Bagnan
+ Phone Number: 9406280021  								   Payment Mode: Card
+ Email-ID: lahiri@gmail.com       								   Date: 17 - 03 - 2022
 ===============================================================================
  Products			 Type of Product 			 Qty 		 Per Rs. 		 Price
 ===============================================================================
- Lamination 			 Card Size			1		45.0		45.00
- FormFillup 			 Normal			3		50.0		150.00
- Xerox 			 Black/White			15		1.5		22.50
+ Xerox 			 Black/White			18		1.5		27.00
+ Printout 			 Colour			4		12.0		48.00
+ PhotoCopy 			 Passport			1		30.0		30.00
+ Scan&Mail 			 Normal			17		5.0		85.00
+ FormFillup 			 Normal			1		60.0		60.00
 
 
 
 
 
 =======================================================================================================
-		 All Items Amount : 	 Rs. 217.50
-		 Tax+GST Amount : 	 Rs. 3.45
-							 Total Paybill Amount : 	 Rs. 220.95
+		 All Items Amount : 	 Rs. 250.00
+		 Tax+GST Amount : 	 Rs. 0.66
+							 Total Paybill Amount : 	 Rs. 250.66
 =======================================================================================================
 
 	          Chowhati Netaji Block, Near Panchayen Math, Rajpur-Sonarpur, Kol - 700149

@@ -1,4 +1,6 @@
-Name,Address,Phone_No,Email,Bill_No,Products,Payment_Mode,Total,Date
-Ranjan Ghorai,dhakuria,1234539700,bap@gmail.com,OEHC-41709, Scan&Mail Lamination Xerox,Cash,Rs. 214.50,2021-08-01
-Chipkali,Bansbagan,1234567890,chipkali@gmail.com,QBYU-72247, Xerox PhotoCopy Lamination FormFillup,Cash,Rs. 236.25,2021-07-26
-bcxvcxb,cbcvbcb,cbvcvx555,bvcxbcxbcx,XJDS-29917, PhotoCopy,Cash,Rs. 374.08,2021-07-27
+Name,Address,Phone,Email,Bill_No,Items,Payment_Mode,Total_amount,Date
+Raju Ram,Jatin Das Park,1234568790,raju@gmail.com,KLFH-72998, Printout Lamination FormFillup,Online,Rs. 120.00,2022-03-17
+Dhananjay Das,Jalpaiguri,2134567890,das@gmail.com,WVHW-50879, Xerox,Cash,Rs. 60.90,2022-03-17
+Avik Lahiri,Kolkata,5432167890,lahiri@gmail.com,GXRO-21465, Printout,Cash,Rs. 31.50,2022-03-17
+Sandipan Ghorai,Bagnan,9406280021,lahiri@gmail.com,GXRO-21465, Xerox Printout PhotoCopy Scan&Mail FormFillup,Card,Rs. 250.66,2022-03-17
+Rajdeep Sen,Howrah,1234567890,sen@gmail.com,PCPU-56321, Xerox Lamination PhotoCopy FormFillup,Online,Rs. 177.25,2022-03-17

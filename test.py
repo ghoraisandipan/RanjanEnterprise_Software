@@ -11,7 +11,8 @@ import os
 import csv
 import re
 import qrcode
-import mysql.connector
+# import mysql.connector
+import sqlite3
 import TESTING as tsk
 
 
@@ -357,7 +358,7 @@ class Bill_App:
         
         #search option combo box
         search_combo = ttk.Combobox(lableframe_bottom1,textvariable=self.database_select_combo,font=('arial',12,'bold'),width=25,state='readonly')
-        search_combo['value']=('Select Option','Name','Phone_No','Bill_No','Email','Date')
+        search_combo['value']=('Select Option','Name','Phone','Bill_No','Email','Date')
         search_combo.current(0)
         search_combo.grid(row=0,column=1)
         
@@ -875,9 +876,9 @@ class Bill_App:
                     return
 
         if self.data_printing.get()=="Print Show Database":
-            conn = mysql.connector.connect(host='localhost',username='root',password='root',database='sys')
+            conn = sqlite3.connect("customer.db")
             my_cursor = conn.cursor()
-            my_cursor.execute("select * from customer")
+            my_cursor.execute("SELECT * FROM customer")
 
             with open("users.csv","w",newline='') as csv_file:
                 csv_writer = csv.writer(csv_file)
@@ -998,19 +999,11 @@ class Bill_App:
         
         else:
             try:
-                conn = mysql.connector.connect(host='localhost',username='root',password='root',database='sys')
+                conn = sqlite3.connect("customer.db")
                 my_cursor = conn.cursor()
-                my_cursor.execute("insert into customer values(%s,%s,%s,%s,%s,%s,%s,%s,%s)",(
-                                                                                                    self.customer_name.get(),
-                                                                                                    self.customer_address.get(),
-                                                                                                    self.customer_phone.get(),
-                                                                                                    self.customer_email.get(),
-                                                                                                    self.customer_bill_no.get(),
-                                                                                                    self.all_item_list.get(),
-                                                                                                    self.customer_payment_mode.get(),
-                                                                                                    self.all_total_amount.get(),
-                                                                                                    self.Tday
-                                                                                                ))
+                
+                my_cursor.execute("INSERT INTO customer VALUES (?,?,?,?,?,?,?,?,?)",[self.customer_name.get(), self.customer_address.get(), self.customer_phone.get(), self.customer_email.get(), self.customer_bill_no.get(), self.all_item_list.get(), self.customer_payment_mode.get(), self.all_total_amount.get(), self.Tday])
+             
                 conn.commit()
                 self.after_adding()
                 conn.close()
@@ -1021,9 +1014,9 @@ class Bill_App:
 
     def after_adding(self):
         try:
-            conn = mysql.connector.connect(host='localhost',username='root',password='root',database='sys')
+            conn = sqlite3.connect("customer.db")
             my_cursor = conn.cursor()
-            my_cursor.execute("select * from customer")
+            my_cursor.execute("SELECT * FROM customer")
             data = my_cursor.fetchall()
 
             if len(data) != 0:
@@ -1057,9 +1050,9 @@ class Bill_App:
 
     def fetch_data(self):
         try:
-            conn = mysql.connector.connect(host='localhost',username='root',password='root',database='sys')
+            conn = sqlite3.connect("customer.db")
             my_cursor = conn.cursor()
-            my_cursor.execute("select * from customer")
+            my_cursor.execute("SELECT * FROM customer")
             data = my_cursor.fetchall()
 
             if len(data) != 0:
@@ -1143,20 +1136,11 @@ class Bill_App:
                 update = messagebox.askyesno('Update','Are you sure update this Customer Data ?',parent=self.root)
 
                 if update>0:
-                    conn = mysql.connector.connect(host='localhost',username='root',password='root',database='sys')
+                    conn = sqlite3.connect("customer.db")
                     my_cursor = conn.cursor()
-                    my_cursor.execute("update customer set Name=%s,Address=%s,Phone_No=%s,Email=%s,Products=%s,Payment_Mode=%s,Total=%s where Bill_No=%s",(
-                                                                                                                                                self.customer_name.get(),
-                                                                                                                                                self.customer_address.get(),
-                                                                                                                                                self.customer_phone.get(),
-                                                                                                                                                self.customer_email.get(),
-                                                                                                                                                self.all_item_list.get(),
-                                                                                                                                                self.customer_payment_mode.get(),
-                                                                                                                                                self.all_total_amount.get(),
+                    my_cursor.execute(f"UPDATE customer SET Name=?,Address=?,Phone=?,Email=?,Items=?,Payment_Mode=?,Total_amount=? WHERE Bill_No=?", (self.customer_name.get(), self.customer_address.get(), self.customer_phone.get(), self.customer_email.get(), self.all_item_list.get(), self.customer_payment_mode.get(), self.all_total_amount.get(), self.customer_bill_no.get()))
                                                                                                                                                 
-                                                                                                                                                self.customer_bill_no.get()
 
-                                                                                                                                            ))
                 else:
                     if not update:
                         return
@@ -1183,9 +1167,10 @@ class Bill_App:
                 Delete = messagebox.askyesno("Delete","Are you sure delete this Customer Data from Database ?",parent=self.root)
 
                 if Delete>0:
-                    conn = mysql.connector.connect(host='localhost',username='root',password='root',database='sys')
+                    # conn = mysql.connector.connect(host='localhost',username='root',password='root',database='sys')
+                    conn = sqlite3.connect("customer.db")
                     my_cursor = conn.cursor()
-                    sql = "delete from customer where Bill_No=%s"
+                    sql = "DELETE FROM customer WHERE Bill_No=?"
                     value = (self.customer_bill_no.get(),)
                     my_cursor.execute(sql,value)
                     conn.commit()
@@ -1232,9 +1217,9 @@ class Bill_App:
         
         else:
             try:
-                conn = mysql.connector.connect(host='localhost',username='root',password='root',database='sys')
+                conn = sqlite3.connect("customer.db")
                 my_cursor = conn.cursor()
-                my_cursor.execute("select * from customer where "+str(self.database_select_combo.get())+" LIKE '%"+str(self.database_select_text.get())+"%'")
+                my_cursor.execute("SELECT * FROM customer WHERE Name=? OR Phone=? OR Email=? OR Bill_No=? OR Date=?", (self.database_select_text.get(), self.database_select_text.get(), self.database_select_text.get(), self.database_select_text.get(), self.database_select_text.get()))
                 rows = my_cursor.fetchall()
 
                 if len(rows) != 0:

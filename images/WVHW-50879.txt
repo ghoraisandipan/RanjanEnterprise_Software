@@ -1,23 +1,23 @@
 				 Welcome to Ghorai Enterprise
 
- BILL Number: MUVY-65567
- Customer Name: fsdfsf
- Address: sdfs
- Phone Number: fdsdfs  								   Payment Mode: Cash
- Email-ID: dfsdfsd       								   Date: 26 - 07 - 2021
+ BILL Number: WVHW-50879
+ Customer Name: Dhananjay Das
+ Address: Jalpaiguri
+ Phone Number: 2134567890  								   Payment Mode: Cash
+ Email-ID: das@gmail.com       								   Date: 17 - 03 - 2022
 ===============================================================================
  Products			 Type of Product 			 Qty 		 Per Rs. 		 Price
 ===============================================================================
- Printout 			 Black/White			1		4.0		4.00
+ Xerox 			 Colour			5		12.0		60.00
 
 
 
 
 
 =======================================================================================================
-		 All Items Amount : 	 Rs. 4.00
-		 Tax+GST Amount : 	 Rs. 0.00
-							 Total Paybill Amount : 	 Rs. 4.00
+		 All Items Amount : 	 Rs. 60.00
+		 Tax+GST Amount : 	 Rs. 0.90
+							 Total Paybill Amount : 	 Rs. 60.90
 =======================================================================================================
 
 	          Chowhati Netaji Block, Near Panchayen Math, Rajpur-Sonarpur, Kol - 700149

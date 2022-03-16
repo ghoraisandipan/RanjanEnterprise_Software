@@ -1,24 +1,27 @@
 				 Welcome to Ghorai Enterprise
 
- BILL Number: VCSE-85980
- Customer Name: tepa tepi
- Address: tippara
- Phone Number: 0987631342  								   Payment Mode: Cash
- Email-ID: tip@gmail.com       								   Date: 26 - 07 - 2021
+ BILL Number: GXRO-21465
+ Customer Name: Sandipan Ghorai
+ Address: Bagnan
+ Phone Number: 9406280021  								   Payment Mode: Card
+ Email-ID: lahiri@gmail.com       								   Date: 17 - 03 - 2022
 ===============================================================================
  Products			 Type of Product 			 Qty 		 Per Rs. 		 Price
 ===============================================================================
- PhotoCopy 			 Passport			1		45.0		45.00
- FormFillup 			 Normal			2		56.0		112.00
+ Xerox 			 Black/White			18		1.5		27.00
+ Printout 			 Colour			4		12.0		48.00
+ PhotoCopy 			 Passport			1		30.0		30.00
+ Scan&Mail 			 Normal			17		5.0		85.00
+ FormFillup 			 Normal			1		60.0		60.00
 
 
 
 
 
 =======================================================================================================
-		 All Items Amount : 	 Rs. 157.00
-		 Tax+GST Amount : 	 Rs. 1.12
-							 Total Paybill Amount : 	 Rs. 158.12
+		 All Items Amount : 	 Rs. 250.00
+		 Tax+GST Amount : 	 Rs. 0.66
+							 Total Paybill Amount : 	 Rs. 250.66
 =======================================================================================================
 
 	          Chowhati Netaji Block, Near Panchayen Math, Rajpur-Sonarpur, Kol - 700149
